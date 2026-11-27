@@ -19,10 +19,10 @@ Pulsa **Iniciar demostración**. El asistente recorre 12 etapas: depósito, lect
 
 - Contenedores: registro, edición, búsqueda, filtros, nivel, peso, conexión, batería y recolección.
 - IoT: simulador con visualización y alertas sincronizadas.
-- Rutas: selección de dispositivos conectados con llenado de 80% o más, orden por distancia Haversine con comparación contra el orden de registro.
-- Clasificación: asignación simulada de lotes PET, HDPE, cartón y no reciclables. Conservación del peso.
+- Rutas: incluye contenedores conectados con llenado de 80% o más y peso estimado disponible. La distancia se calcula con Haversine; el recorrido solo suma kilómetros y registra recolecciones cuando se completan paradas con residuos.
+- Clasificación: asignación simulada de lotes PET, HDPE, cartón y no reciclables. Rechaza cantidades inválidas y conserva el peso registrado.
 - Reportes: historial y descarga CSV.
-- Configuración: reinicio de datos. Persistencia mediante LocalStorage.
+- Configuración: reinicio de datos. Persistencia mediante LocalStorage; los registros inválidos o incompletos se descartan al restaurar la sesión.
 
 ## Estructura
 

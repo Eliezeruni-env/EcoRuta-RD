@@ -1,0 +1,246 @@
+:root {
+  --green: #356f56;
+  --muted: #64746d;
+  --border: #dce5df;
+}
+
+.primary {
+  background: #356f56;
+  box-shadow: none;
+}
+
+.primary:hover {
+  background: #2d604a;
+}
+
+.hero {
+  background: #f2f5f3;
+}
+
+.hero h1 em,
+h2 em {
+  background: none;
+  color: #397459;
+}
+
+.tint,
+.bin-scene {
+  background: #f1f5f2;
+}
+
+.bin-fill i,
+.progress i {
+  background: #56866a;
+}
+
+.belt {
+  background: #6c8378;
+}
+
+.end {
+  background: #e9efeb;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  vertical-align: middle;
+}
+
+.logo .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar button .nav-icon {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #f1f5f2;
+}
+
+.sidebar button .nav-icon .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar button {
+  gap: 12px;
+}
+
+.sidebar button.active .nav-icon {
+  background: #c9ead6;
+}
+
+.eyebrow .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.flow article > span .icon {
+  width: 26px;
+  height: 26px;
+}
+
+.card h3:has(> .icon) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 1.2;
+}
+
+.card h3 > .icon {
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  border-radius: 12px;
+  background: #edf4ef;
+  color: #397459;
+}
+
+.camera,
+.callout {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.camera .icon,
+.callout .icon {
+  width: 18px;
+  height: 18px;
+}
+
+.checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.checks span,
+.audience b {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checks .icon,
+.audience .icon {
+  width: 15px;
+  height: 15px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  background: #56866a;
+  vertical-align: middle;
+}
+
+.status-dot.offline {
+  background: #7a8580;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgb(16 46 38 / 55%);
+}
+
+.modal {
+  width: min(100%, 460px);
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgb(16 46 38 / 20%);
+}
+
+.modal h2 {
+  margin: 14px 0;
+  color: #183a2d;
+  font-size: 24px;
+}
+
+.modal p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.modal form label {
+  display: block;
+  margin: 20px 0 8px;
+  color: #355347;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.modal input {
+  width: 100%;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.danger {
+  border-color: #9c5757;
+  background: #9c5757;
+  color: #fff;
+}
+
+.danger:hover {
+  border-color: #854848;
+  background: #854848;
+  color: #fff;
+}
+
+.danger-outline {
+  border-color: #e7d9d9;
+  color: #875454;
+}
+
+.danger-outline:hover {
+  background: #f8eeee;
+}
+
+@media (max-width: 520px) {
+  .sidebar button {
+    gap: 9px;
+  }
+
+  .card h3:has(> .icon) {
+    gap: 10px;
+  }
+
+  .card h3 > .icon {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border-radius: 11px;
+  }
+
+  .modal {
+    padding: 22px;
+  }
+
+  .modal-actions {
+    flex-direction: column-reverse;
+  }
+}
